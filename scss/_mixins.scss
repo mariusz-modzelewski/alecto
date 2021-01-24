@@ -1,0 +1,22 @@
+@mixin mq($breakpoint) {
+    $size: map-get($breakpoints, $breakpoint);
+    @if($size) {
+        @media #{$size} {
+            @content;
+        }
+    }
+    @else {
+        @error '"#{$breakpoint}" - Brak podanej wartości!';
+    }
+}
+
+@mixin roundedBtn {
+    padding: 8px 30px;
+    border-radius: 23px;
+}
+
+@mixin darkenMainBtn {
+    background-color: darken($main-color, 3%);
+    border-color: darken($main-color, 3%);
+    color: $color-white;
+}

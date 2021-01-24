@@ -1,0 +1,81 @@
+@import 'reset';
+@import 'mixins';
+@import 'variables';
+@import 'typography';
+@import 'header';
+@import 'about-us';
+@import 'informations';
+@import 'opinions';
+@import 'services';
+@import 'team';
+@import 'pricing';
+@import 'locations';
+@import 'templates';
+@import 'footer';
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $main-color;
+    border-radius: 25px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: $screen-max-width;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0 15px;
+    @include mq(tablet-large) {
+        justify-content: space-between;
+    }
+}
+
+.btn {
+    display: block;
+    width: fit-content;
+    margin: 15px 0;
+    border: 2px solid;
+    line-height: 100%;
+    text-decoration: none;
+    &--primary {
+        background-color: $main-color;
+        border-color: $main-color;
+        @include roundedBtn;
+        color: $color-white;
+        &:hover {
+            @include darkenMainBtn;
+        }
+    }
+    &--purchase {
+        width: 100%;
+        padding: 25px 35px;
+        color: $color-white;
+        font-weight: 700;
+        font-size: 1.1rem;
+        background-color: $main-color;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        border-color: $main-color;
+        text-transform: uppercase;
+        &:hover {
+            @include darkenMainBtn;
+        }
+    }
+    &--slide {
+        border-color: $color-white;
+        color: $color-white;
+        @include roundedBtn;
+        &:hover {
+            border-color: $main-color;
+        }
+    }
+}

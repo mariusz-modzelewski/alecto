@@ -1,0 +1,41 @@
+.opinions {
+    display: none;
+
+    @include mq(tablet-large) {
+        display: block;
+        background-image: url(/assets/img/opinions-bg.png);
+        background-size: cover;
+    }
+
+    &__left-arrow {
+
+    }
+
+    &__right-arrow {
+
+    }
+
+    &__opinion {
+
+    }
+
+    &__img {
+
+    }
+
+    &__text {
+
+    }
+
+    &__text--highlited {
+
+    }
+
+    &__author {
+
+    }
+
+    &__author--name {
+
+    }
+}

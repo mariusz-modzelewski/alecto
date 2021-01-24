@@ -1,0 +1,16 @@
+.templates {
+    background: url("/assets/img/try-symu.png") center no-repeat;
+    padding: 30px 0;
+    &__text {
+        font-size: 2.5rem;
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 30px;
+        @include mq(tablet-large) {
+            font-size: 3.75rem;
+        }
+        &--hl {
+            font-weight: 700;
+        }
+    }
+}

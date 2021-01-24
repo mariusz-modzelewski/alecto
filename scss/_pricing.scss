@@ -1,0 +1,44 @@
+.pricing {
+    text-align: center;
+    background-color: #f9f9fa;
+    & .container {
+        justify-content: center;
+    }
+    &__title {
+        width: 100%;
+    }
+    &__text {
+        margin-bottom: 30px;
+    }
+    &__box {
+        text-align: left;
+        box-shadow: (0 0 17.5px rgba(227, 227, 227, 0.65));
+        margin-bottom: 20px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    &__box-top {
+        padding: 50px 30px;
+        background-color: $color-white;
+        margin-bottom: 1px;
+    }
+    &__price {
+        color: $main-color;
+        font-size: 3rem;
+    }
+    &__cash {
+        display: inline-block;
+        transform: translateY(-5px);
+    }
+    &__item-title {
+        font-size: 1.1rem;
+    }
+    &__box-bottom {
+        padding: 50px 30px;
+        background-color: $color-white;
+    }
+    &__item-text {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+}

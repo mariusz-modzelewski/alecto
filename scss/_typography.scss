@@ -1,0 +1,46 @@
+html {
+    font-family: $font-family-default;
+    color: $font-color-default;
+    font-size: $smartphone-font-size;
+    @include mq(tablet-large) {
+        font-size: $base-font-size;
+    }
+}
+
+a {
+    color: #17daa3;
+    &:hover {
+        color: $main-color;
+    }
+}
+
+h1,
+h2,
+h3 {
+    color: #576671;
+    font-weight: 300;
+    font-size: 2.9rem;
+    @include mq(tablet-large) {
+        font-size: 3.75rem;
+    }
+}
+
+.header--after {
+    position: relative;
+    line-height: 200%;
+    margin-bottom: 20px;
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translatex(-50%);
+        width: 30px;
+        height: 1px;
+        background-color: $main-color;
+    }
+}
+
+p {
+    font-weight: 300;
+}

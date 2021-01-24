@@ -1,0 +1,59 @@
+.team {
+    text-align: center;
+
+    &__title {
+        font-size: 2.5rem;
+        width: 100%;
+    }
+
+    &__text {
+        
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+
+        margin: 30px 0;
+
+        @include mq(smartphone) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+        }
+
+        @include mq(tablet) {
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+
+    &__member {
+        position: relative;
+
+        &:hover .team__member-name {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__member-img {
+        display: block;
+    }
+
+    &__member-name {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        background-color: $main-color;
+        opacity: .8;
+
+        color: $color-white;
+        font-size: 1rem;
+    }
+}
