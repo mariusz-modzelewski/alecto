@@ -9,13 +9,14 @@
     }
     &__text {
         margin-bottom: 30px;
+        flex-basis: 100%;
     }
     &__box {
         text-align: left;
         box-shadow: (0 0 17.5px rgba(227, 227, 227, 0.65));
-        margin-bottom: 20px;
         border-radius: 5px;
         overflow: hidden;
+        margin: 20px;
     }
     &__box-top {
         padding: 30px;

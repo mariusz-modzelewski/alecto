@@ -651,6 +651,11 @@ p {
   width: 100%;
 }
 
+.team__text {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
 .team__grid {
   display: -ms-grid;
   display: grid;
@@ -712,6 +717,12 @@ p {
   font-size: 1rem;
 }
 
+@media (min-width: 460px) {
+  .team {
+    padding-top: 30px;
+  }
+}
+
 .pricing {
   text-align: center;
   background-color: #f9f9fa;
@@ -729,15 +740,17 @@ p {
 
 .pricing__text {
   margin-bottom: 30px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .pricing__box {
   text-align: left;
   -webkit-box-shadow: 0 0 17.5px rgba(227, 227, 227, 0.65);
           box-shadow: 0 0 17.5px rgba(227, 227, 227, 0.65);
-  margin-bottom: 20px;
   border-radius: 5px;
   overflow: hidden;
+  margin: 20px;
 }
 
 .pricing__box-top {
@@ -881,7 +894,7 @@ html {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
