@@ -24,6 +24,7 @@
         padding: 5px 0;
     }
     &__link {
+        text-transform: capitalize;
         text-decoration: none;
         color: $font-color-default;
     }

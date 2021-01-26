@@ -1,29 +1,30 @@
 .about-us {
     padding: 15px 0;
-
     & .container {
         text-align: center;
-        flex-direction: column;
+        justify-content: center;
     }
-
     &__title {
         width: 100%;
     }
-
     &__text {
+        flex-basis: 100%;
         @include mq(tablet-large) {
             margin-bottom: 50px;
         }
     }
-
     &__feature {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-        padding: 15px 0;
+        padding: 15px 20px;
+        @include mq(smartphone-large) {
+            flex-basis: 50%;
+        }
+        @include mq(desktop-small) {
+            flex-basis: 24%;
+        }
     }
-
     &__feature-img {
         position: absolute;
         top: 50%;
@@ -33,7 +34,6 @@
         width: auto;
         z-index: 1;
     }
-
     &__feature-img-bg {
         position: relative;
         display: block;
@@ -41,21 +41,16 @@
         background-color: #edeff0;
         width: 180px;
         height: 180px;
-
         margin: 30px 0;
-
         &:hover {
             background-color: $main-color;
         }
     }
-
     &__feature-title {
         margin: 15px 0;
-        
         font-size: 2rem;
         color: #000;
     }
-
     &__feature-text {
         margin: 15px 0;
     }

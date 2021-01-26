@@ -1,24 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-
-$font-family-default: 'Montserrat', sans-serif;
-
+$font-family-default: 'Montserrat',
+sans-serif;
 $font-color-default: #87949e;
 $main-color: #17daa3;
 $color-white: #fff;
 $menu-link-color: #fff;
-
 $screen-max-width: 1200px;
-
-
-$base-font-size: 16px;
+$base-font-size: 14px;
 $smartphone-font-size: 14px;
-
-$breakpoints: (
-    smartphone: (min-width: 460px),
-    smartphone-large: (min-width: 640px),
-    tablet: (min-width: 800px),
-    tablet-large: (min-width: 1024px),
-    desktop-small: (min-width: 1280px),
-    desktop-medium: (min-width: 1600px),
-    desktop-large: (min-width: 1900px),
+$breakpoints: ( smartphone: (min-width: 460px),
+smartphone-large: (min-width: 640px),
+tablet: (min-width: 800px),
+tablet-large: (min-width: 1024px),
+desktop-small: (min-width: 1280px),
+desktop-medium: (min-width: 1600px),
+desktop-large: (min-width: 1900px),
 );

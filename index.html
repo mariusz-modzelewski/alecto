@@ -10,31 +10,38 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="home" class="header">
         <div class="container">
             <nav class="menu">
-                <a href="" class="menu__logo"><img src="/assets/img/logo.png" alt="Alecto logo" class="menu__logo-img"></a>
+                <a href="/" class="menu__logo"><img src="/assets/img/logo.png" alt="Alecto logo" class="menu__logo-img"></a>
                 <button class="hamburger" aria-label="Menu">
                     <span class="hamburger__container" tabindex="-1">
                         <span class="hamburger__bars"></span>
                     </span>
                 </button>
                 <ul class="menu__items">
-                    <li class="menu__item"><a href="#" class="menu__link">home</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">about</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">work</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">services</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">blog</a></li>
+                    <li class="menu__item"><a href="#home" class="menu__link">home</a></li>
+                    <li class="menu__item"><a href="#about-us" class="menu__link">about</a></li>
+                    <li class="menu__item"><a href="#informations" class="menu__link">informations</a></li>
+                    <li class="menu__item"><a href="#services" class="menu__link">services</a></li>
+                    <li class="menu__item"><a href="#team" class="menu__link">team</a></li>
+                    <li class="menu__item"><a href="#pricing" class="menu__link">pricing</a></li>
                     <li class="menu__item"><a href="#" class="menu__link"><i class="fas fa-search"></i></a></li>
                 </ul>
             </nav>
             <div class="slider">
                 <button class="slider__left-arrow"></button>
-                <div class="slider__slide">
+                <div class="slider__slide slider__slide--active" data-slide-id="1">
                     <p class="slider__big-text"><span class="slider__highlited-text">Alecto</span> is simple PSD Template
                     </p>
                     <p class="slider__small-text">Nam varius accumsan elementum afiquam</p>
-                    <a href="#" class="btn btn--slide">Learn more</a>
+                    <a href="#team" class="btn btn--slide">Learn more</a>
+                </div>
+                <div class="slider__slide" data-slide-id="2">
+                    <p class="slider__big-text"><span class="slider__highlited-text">Lorem ipsum</span> is elementum
+                    </p>
+                    <p class="slider__small-text">Lorem ipsum varius dolor elementum sit</p>
+                    <a href="#pricing" class="btn btn--slide">Learn more</a>
                 </div>
                 <button class="slider__right-arrow"></button>
                 <div class="slider__slide-switch">
@@ -46,17 +53,17 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="scroll-down"></a>
+        <a href="#" class="scroll-down"><i class="fas fa-angle-down"></i></a>
     </header>
     <main class="main">
-        <section class="about-us">
+        <section id="about-us" class="about-us">
             <div class="container">
                 <h1 class="about-us__title header--after">About us</h1>
                 <p class="about-us__text">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
                 </p>
                 <article class="about-us__feature">
                     <span class="about-us__feature-img-bg">
-                        <img src="/assets/img/about-us-1.svg" alt="" class="about-us__feature-img">
+                        <img src="/assets/img/about-us-1.svg" alt="Feature 1" class="about-us__feature-img">
                     </span>
                     <p class="about-us__feature-title">Lorem ipsum</p>
                     <p class="about-us__feature-text">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
@@ -64,7 +71,7 @@
                 </article>
                 <article class="about-us__feature">
                     <span class="about-us__feature-img-bg">
-                        <img src="/assets/img/about-us-2.svg" alt="" class="about-us__feature-img">
+                        <img src="/assets/img/about-us-2.svg" alt="Feature 2" class="about-us__feature-img">
                     </span>
                     <p class="about-us__feature-title">Lorem ipsum</p>
                     <p class="about-us__feature-text">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
@@ -72,7 +79,7 @@
                 </article>
                 <article class="about-us__feature">
                     <span class="about-us__feature-img-bg">
-                        <img src="/assets/img/about-us-3.svg" alt="" class="about-us__feature-img">
+                        <img src="/assets/img/about-us-3.svg" alt="Feature 3" class="about-us__feature-img">
                     </span>
                     <p class="about-us__feature-title">Lorem ipsum</p>
                     <p class="about-us__feature-text">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
@@ -80,7 +87,7 @@
                 </article>
                 <article class="about-us__feature">
                     <span class="about-us__feature-img-bg">
-                        <img src="/assets/img/about-us-4.svg" alt="" class="about-us__feature-img">
+                        <img src="/assets/img/about-us-4.svg" alt="Feature 4" class="about-us__feature-img">
                     </span>
                     <p class="about-us__feature-title">Lorem ipsum</p>
                     <p class="about-us__feature-text">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
@@ -89,15 +96,15 @@
                 <a href="#" class="btn btn--primary">Learn more</a>
             </div>
         </section>
-        <section class="informations">
+        <section id="informations" class="informations">
             <div class="container">
                 <article class="informations__information">
-                    <img src="/assets/img/informations-1.jpg" alt="" class="informations__img">
+                    <img src="/assets/img/informations-1.jpg" alt="Aparat fotograficzny" class="informations__img">
                     <div class="informations__text-wrapper">
                         <h2 class="informations__title">Lorem ipsum</h2>
                         <p class="informations__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor, ac blandit nisl posuere. Pellentesque hendrerit suscipit mi eu lobortis. Curabitur consectetur enim id elementum accumsan. Quisque
                             metus purus, iaculis id tincidunt non, blandit quis sapien.</p>
-                        <a href="" class="btn btn--primary">Learn more</a>
+                        <a href="#" class="btn btn--primary">Learn more</a>
                     </div>
                 </article>
                 <article class="informations__information">
@@ -105,13 +112,13 @@
                         <h2 class="informations__title">Lorem ipsum</h2>
                         <p class="informations__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor, ac blandit nisl posuere. Pellentesque hendrerit suscipit mi eu lobortis. Curabitur consectetur enim id elementum accumsan. Quisque
                             metus purus, iaculis id tincidunt non, blandit quis sapien.</p>
-                        <a href="" class="btn btn--primary">Learn more</a>
+                        <a href="#" class="btn btn--primary">Learn more</a>
                     </div>
-                    <img src="/assets/img/informations-2.jpg" alt="" class="informations__img">
+                    <img src="/assets/img/informations-2.jpg" alt="Laptop" class="informations__img">
                 </article>
             </div>
         </section>
-        <section class="opinions">
+        <section id="opinions" class="opinions">
             <div class="container">
                 <button class="opinions__left-arrow"></button>
                 <div class="opinions__opinion">
@@ -129,38 +136,38 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section id="services" class="services">
             <div class="container">
                 <h2 class="services__title header--after">Our Services</h2>
                 <p class="services__text">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
                 </p>
                 <div class="services__service">
-                    <span class="services__img-bg"><img src="/assets/img/services-1.svg" alt=""
+                    <span class="services__img-bg"><img src="/assets/img/services-1.svg" alt="Service 1"
                             class="services__img"></span>
                     <h3 class="services__service-title">Portfolio</h3>
                     <p class="services__service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor, ac blandit nisl.</p>
                 </div>
                 <div class="services__service">
-                    <span class="services__img-bg"><img src="/assets/img/services-2.svg" alt=""
+                    <span class="services__img-bg"><img src="/assets/img/services-2.svg" alt="Service 2"
                             class="services__img"></span>
                     <h3 class="services__service-title">Design</h3>
                     <p class="services__service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor, ac blandit nisl.</p>
                 </div>
                 <div class="services__service">
-                    <span class="services__img-bg"><img src="/assets/img/services-3.svg" alt=""
+                    <span class="services__img-bg"><img src="/assets/img/services-3.svg" alt="Service 3"
                             class="services__img"></span>
                     <h3 class="services__service-title">Branding</h3>
                     <p class="services__service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor, ac blandit nisl.</p>
                 </div>
                 <div class="services__service">
-                    <span class="services__img-bg"><img src="/assets/img/services-4.svg" alt=""
+                    <span class="services__img-bg"><img src="/assets/img/services-4.svg" alt="Service 4"
                             class="services__img"></span>
                     <h3 class="services__service-title">Development</h3>
                     <p class="services__service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor, ac blandit nisl.</p>
                 </div>
             </div>
         </section>
-        <section class="team">
+        <section id="team" class="team">
             <div class="container">
                 <h2 class="team__title header--after">Meet our team</h2>
                 <p class="team__text">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.</p>
@@ -208,7 +215,7 @@
                 </div>
             </div>
         </section>
-        <section class="pricing">
+        <section id="pricing" class="pricing">
             <div class="container">
                 <h2 class="pricing__title header--after">Pricing</h2>
                 <p class="pricing__text">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
@@ -267,22 +274,22 @@
                 </div>
             </div>
         </section>
-        <section class="locations">
+        <section id="locations" class="locations">
             <div class="container">
                 <div class="location__desc">
                     <h2 class="locations__title">Dolor sit amet</h2>
                     <p class="locations__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor, ac blandit nisl posuere. Pellentesque hendrerit suscipit mi eu lobortis. Curabitur consectetur enim id elementum accumsan. Quisque
                         metus purus, iaculis id tincidunt non, blandit quis sapien.</p>
-                    <a href="" class="btn btn--primary">Learn more</a>
+                    <a href="#" class="btn btn--primary">Learn more</a>
                 </div>
                 <img src="/assets/img/map.jpg" alt="Mapa świata" class="locations__map">
             </div>
         </section>
-        <section class="templates">
+        <section id="templates" class="templates">
             <div class="container">
                 <p class="templates__text">Try our <span class="templates__text--hl">PSD template</span> on symu.co
                 </p>
-                <a href="" class="btn btn--primary">symu.co/freebies</a>
+                <a href="https://symu.co/freebies/" class="btn btn--primary">symu.co/freebies</a>
             </div>
         </section>
     </main>
@@ -291,11 +298,12 @@
             <p class="footer__copyright">All Rights Reserved by Alecto</p>
             <nav class="footer-menu">
                 <ul class="footer-menu__items">
-                    <li class="footer-menu__item"><a href="" class="footer-menu__link">Home</a></li>
-                    <li class="footer-menu__item"><a href="" class="footer-menu__link">About</a></li>
-                    <li class="footer-menu__item"><a href="" class="footer-menu__link">Work</a></li>
-                    <li class="footer-menu__item"><a href="" class="footer-menu__link">Service</a></li>
-                    <li class="footer-menu__item"><a href="" class="footer-menu__link">Blog</a></li>
+                    <li class="footer-menu__item"><a href="#home" class="footer-menu__link">home</a></li>
+                    <li class="footer-menu__item"><a href="#about-us" class="footer-menu__link">about</a></li>
+                    <li class="footer-menu__item"><a href="#informations" class="footer-menu__link">informations</a></li>
+                    <li class="footer-menu__item"><a href="#services" class="footer-menu__link">services</a></li>
+                    <li class="footer-menu__item"><a href="#team" class="footer-menu__link">team</a></li>
+                    <li class="footer-menu__item"><a href="#pricing" class="footer-menu__link">pricing</a></li>
                 </ul>
             </nav>
         </div>
