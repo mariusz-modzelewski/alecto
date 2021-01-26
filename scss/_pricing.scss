@@ -18,9 +18,12 @@
         overflow: hidden;
     }
     &__box-top {
-        padding: 50px 30px;
+        padding: 30px;
         background-color: $color-white;
         margin-bottom: 1px;
+        @include mq(tablet-large) {
+            padding: 50px 30px;
+        }
     }
     &__price {
         color: $main-color;
@@ -34,8 +37,11 @@
         font-size: 1.1rem;
     }
     &__box-bottom {
-        padding: 50px 30px;
+        padding: 30px;
         background-color: $color-white;
+        @include mq(tablet-large) {
+            padding: 50px 30px;
+        }
     }
     &__item-text {
         font-size: 1.1rem;

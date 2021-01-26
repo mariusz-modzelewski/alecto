@@ -566,9 +566,15 @@ p {
 }
 
 .pricing__box-top {
-  padding: 50px 30px;
+  padding: 30px;
   background-color: #fff;
   margin-bottom: 1px;
+}
+
+@media (min-width: 1024px) {
+  .pricing__box-top {
+    padding: 50px 30px;
+  }
 }
 
 .pricing__price {
@@ -587,8 +593,14 @@ p {
 }
 
 .pricing__box-bottom {
-  padding: 50px 30px;
+  padding: 30px;
   background-color: #fff;
+}
+
+@media (min-width: 1024px) {
+  .pricing__box-bottom {
+    padding: 50px 30px;
+  }
 }
 
 .pricing__item-text {
@@ -633,6 +645,50 @@ p {
 
 .templates__text--hl {
   font-weight: 700;
+}
+
+.footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 0 20px;
+}
+
+.footer__copyright:before {
+  content: url("/assets/img/alecto.png");
+  padding-right: 10px;
+}
+
+.footer-menu {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.footer-menu__items {
+  padding: 10px 0;
+  list-style: none;
+}
+
+.footer-menu__item {
+  padding: 5px 0;
+}
+
+.footer-menu__link {
+  text-decoration: none;
+  color: #87949e;
 }
 
 ::-webkit-scrollbar {
