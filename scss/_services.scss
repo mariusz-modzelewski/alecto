@@ -1,50 +1,58 @@
 .services {
     background-color: #edeff1;
     text-align: center;
-
     &__title {
         width: 100%;
     }
-
     &__text {
-
+        margin-bottom: 20px;
+        flex-basis: 100%;
     }
-
     &__service {
         padding: 15px 0;
+        @include mq(smartphone-large) {
+            flex-basis: 48%;
+        }
+        @include mq(tablet-large) {
+            display: grid;
+            grid-template-columns: 110px auto;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: "img title" "img text";
+            text-align: left;
+        }
     }
-
     &__img-bg {
         display: inline-block;
-
         background-color: $color-white;
         border-radius: 50%;
-
         padding: 10px;
         height: 45px;
         width: 45px;
-
         @include mq(tablet-large) {
             padding: 30px;
-            height: 105px;
-            width: 105px;
+            height: 100px;
+            width: 100px;
         }
+        grid-area: img;
     }
-
     &__img {
         height: 25px;
         width: auto;
-
         @include mq(tablet-large) {
             height: 35px;
         }
     }
-
     &__service-title {
         margin: 15px 0;
+        padding: 0 20px;
+        grid-area: title;
     }
-
     &__service-text {
         line-height: 2.5rem;
+        padding: 0 20px;
+        grid-area: text;
+    }
+    @include mq(smartphone-large) {
+        padding: 30px;
     }
 }
