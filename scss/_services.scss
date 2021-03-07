@@ -46,13 +46,21 @@
         margin: 15px 0;
         padding: 0 20px;
         grid-area: title;
+        font-size: 2rem;
+        @include mq(tablet-large) {
+            font-size: 3rem;
+        }
     }
     &__service-text {
         line-height: 2.5rem;
         padding: 0 20px;
         grid-area: text;
+        font-size: 1rem;
     }
     @include mq(smartphone-large) {
         padding: 30px;
+    }
+    @include mq(tablet-large) {
+        padding: 50px 0;
     }
 }

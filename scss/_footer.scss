@@ -11,6 +11,9 @@
             content: url("/assets/img/alecto.png");
             padding-right: 10px;
         }
+        @include mq(tablet-large) {
+            flex-basis: 30%;
+        }
     }
 }
 
@@ -19,13 +22,23 @@
     &__items {
         padding: 10px 0;
         list-style: none;
+        @include mq(tablet-large) {
+            display: flex;
+            justify-content: flex-end;
+        }
     }
     &__item {
         padding: 5px 0;
+        @include mq(tablet-large) {
+            padding: 5px 10px;
+        }
     }
     &__link {
         text-transform: capitalize;
         text-decoration: none;
         color: $font-color-default;
+    }
+    @include mq(tablet-large) {
+        flex-basis: 70%;
     }
 }

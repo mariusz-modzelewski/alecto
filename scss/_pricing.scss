@@ -17,6 +17,12 @@
         border-radius: 5px;
         overflow: hidden;
         margin: 20px;
+        @include mq(tablet) {
+            flex-basis: 40%;
+        }
+        @include mq(desktop-medium) {
+            flex-basis: 22%;
+        }
     }
     &__box-top {
         padding: 30px;
@@ -47,5 +53,8 @@
     &__item-text {
         font-size: 1.1rem;
         margin-bottom: 20px;
+    }
+    @include mq(tablet-large) {
+        padding: 50px 0;
     }
 }
