@@ -3,11 +3,12 @@
     width: 100vw;
     max-width: 1920px;
     height: 100vh;
-    background-image: url(/assets/img/hero.png);
+    background-image: url(/assets/img/hero.webp);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
+    margin: 0 auto;
 }
 
 .menu {
@@ -137,9 +138,6 @@
     bottom: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
-    &__left-arrow {
-        display: none;
-    }
     &__slide {
         display: none;
         flex-direction: column;
@@ -167,9 +165,6 @@
         @include mq(tablet-large) {
             font-size: 1.75rem;
         }
-    }
-    &__right-arrow {
-        display: none;
     }
     &__slide-switch {
         margin-top: 40px;

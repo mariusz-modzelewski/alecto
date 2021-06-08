@@ -8,7 +8,7 @@
         flex-basis: 100%;
         padding: 0 20px;
         &:before {
-            content: url("/assets/img/alecto.png");
+            content: url("/assets/img/alecto.webp");
             padding-right: 10px;
         }
         @include mq(tablet-large) {
